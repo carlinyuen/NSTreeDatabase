@@ -1,0 +1,3 @@
+[submodule "NSTree"]
+	path = NSTree
+	url = git@github.com:carlinyuen/NSTree.git
