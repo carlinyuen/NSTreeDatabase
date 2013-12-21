@@ -21,6 +21,9 @@
 		2239E9CB18658251002C0552 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2239E9AD18658250002C0552 /* UIKit.framework */; };
 		2239E9D318658251002C0552 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2239E9D118658251002C0552 /* InfoPlist.strings */; };
 		2239E9D518658251002C0552 /* NSTreeDatabaseExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2239E9D418658251002C0552 /* NSTreeDatabaseExampleTests.m */; };
+		2239E9E1186584CA002C0552 /* NSTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2239E9E0186584CA002C0552 /* NSTree.m */; };
+		2239E9E41865857A002C0552 /* NSTreeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2239E9E31865857A002C0552 /* NSTreeDatabase.m */; };
+		2239E9E51865857A002C0552 /* NSTreeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2239E9E31865857A002C0552 /* NSTreeDatabase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		2239E9D018658251002C0552 /* NSTreeDatabaseExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSTreeDatabaseExampleTests-Info.plist"; sourceTree = "<group>"; };
 		2239E9D218658251002C0552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2239E9D418658251002C0552 /* NSTreeDatabaseExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTreeDatabaseExampleTests.m; sourceTree = "<group>"; };
+		2239E9DF186584CA002C0552 /* NSTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTree.h; sourceTree = "<group>"; };
+		2239E9E0186584CA002C0552 /* NSTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTree.m; sourceTree = "<group>"; };
+		2239E9E21865857A002C0552 /* NSTreeDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSTreeDatabase.h; path = ../NSTreeDatabase/NSTreeDatabase.h; sourceTree = "<group>"; };
+		2239E9E31865857A002C0552 /* NSTreeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSTreeDatabase.m; path = ../NSTreeDatabase/NSTreeDatabase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +89,12 @@
 		2239E99D18658250002C0552 = {
 			isa = PBXGroup;
 			children = (
+				2239E9DE186584CA002C0552 /* NSTree */,
+				2239E9E618658583002C0552 /* NSTreeDatabase */,
 				2239E9AF18658250002C0552 /* NSTreeDatabaseExample */,
 				2239E9CE18658251002C0552 /* NSTreeDatabaseExampleTests */,
-				2239E9A818658250002C0552 /* Frameworks */,
 				2239E9A718658250002C0552 /* Products */,
+				2239E9A818658250002C0552 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +159,25 @@
 				2239E9D118658251002C0552 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2239E9DE186584CA002C0552 /* NSTree */ = {
+			isa = PBXGroup;
+			children = (
+				2239E9DF186584CA002C0552 /* NSTree.h */,
+				2239E9E0186584CA002C0552 /* NSTree.m */,
+			);
+			name = NSTree;
+			path = ../NSTree/NSTree;
+			sourceTree = "<group>";
+		};
+		2239E9E618658583002C0552 /* NSTreeDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				2239E9E21865857A002C0552 /* NSTreeDatabase.h */,
+				2239E9E31865857A002C0552 /* NSTreeDatabase.m */,
+			);
+			name = NSTreeDatabase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2239E9E1186584CA002C0552 /* NSTree.m in Sources */,
 				2239E9BA18658250002C0552 /* CCAppDelegate.m in Sources */,
 				2239E9B618658250002C0552 /* main.m in Sources */,
+				2239E9E41865857A002C0552 /* NSTreeDatabase.m in Sources */,
 				2239E9C018658250002C0552 /* CCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2239E9D518658251002C0552 /* NSTreeDatabaseExampleTests.m in Sources */,
+				2239E9E51865857A002C0552 /* NSTreeDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
